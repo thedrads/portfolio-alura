@@ -18,11 +18,8 @@ body {
   color: var(--cor-secundaria);
 }
 
-/* Header mais compacto */
-.cabecalho {
-  /* antes: padding: 2% 0% 0% 15% */
-  padding: 12px 0 0 15%;
-}
+/* Header compacto */
+.cabecalho { padding: 12px 0 0 15%; }
 
 .cabecalho__menu { display: flex; gap: 80px; }
 
@@ -34,9 +31,8 @@ body {
   text-decoration: none;
 }
 
-/* Seção principal com menos respiro e gap menor */
+/* Seção principal com respiro controlado */
 .apresentacao {
-  /* antes: padding: 5% 15%; gap: 82px */
   padding: 24px 12%;
   display: flex;
   align-items: center;
@@ -44,17 +40,22 @@ body {
   gap: 48px;
 }
 
+/* Mais respiro só na Home */
+.home .apresentacao__conteudo { gap: 28px; }
+.about .apresentacao__conteudo { gap: 24px; }
+
+/* Título e textos */
 .apresentacao__conteudo {
   width: 50%;
   display: flex;
   flex-direction: column;
-  /* antes: gap: 40px */
-  gap: 24px;
 }
 
 .apresentacao__conteudo__titulo {
   font-size: 2.25rem;
   font-family: var(--fonte-primaria);
+  line-height: 1.2;
+  margin-top: 2px;            /* leve respiro do menu para o título */
 }
 
 .titulo-destaque { color: var(--cor-terciaria); }
@@ -64,20 +65,20 @@ body {
   font-family: var(--fonte-secundaria);
 }
 
-/* Bloco de links mais enxuto */
+/* Bloco de links com espaço sutil acima na Home */
 .apresentacao__links {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  /* antes: gap: 32px */
   gap: 20px;
 }
+
+.home .apresentacao__links { margin-top: 4px; }
 
 .apresentacao__links__subtitulo {
   font-family: var(--fonte-primaria);
   font-weight: 400;
-  /* antes: 1.5rem */
   font-size: 1.25rem;
 }
 
@@ -92,7 +93,6 @@ body {
   border-radius: 8px;
   font-size: 1.5rem;
   font-weight: 600;
-  /* antes: 21.5px 0 */
   padding: 14px 0;
   text-decoration: none;
   color: var(--cor-secundaria);
@@ -100,7 +100,6 @@ body {
   transition: background-color .15s ease-in-out, transform .15s ease-in-out;
 }
 
-/* Tamanho consistente dos ícones das redes */
 .apresentacao__links__navegacao img {
   width: 24px;
   height: 24px;
@@ -112,44 +111,38 @@ body {
   transform: translateY(-1px);
 }
 
-/* Imagem principal */
+/* Foto sutilmente menor */
 .apresentacao__imagem {
-  width: 50%;
-  max-width: 480px;
+  width: 46%;                 /* antes 50% */
+  max-width: 440px;           /* antes 480px */
   height: auto;
   border-radius: 12px;
   object-fit: cover;
 }
 
+/* Rodapé mais baixo nas duas páginas */
 .rodape {
   color: var(--cor-primaria);
   background-color: var(--cor-terciaria);
-  padding: 24px;
+  padding: 16px 24px;         /* antes 24px */
   text-align: center;
   font-family: var(--fonte-secundaria);
-  font-size: 1.5rem;
+  font-size: 1.4rem;          /* leve ajuste */
   font-weight: 400;
 }
 
-/* Responsivo mais compacto */
+/* Responsivo */
 @media (max-width: 1200px) {
-  /* antes: padding: 10% apenas em cima */
   .cabecalho { padding: 18px 5% 0 5%; }
   .cabecalho__menu { justify-content: center; }
 
   .apresentacao {
     flex-direction: column-reverse;
-    /* antes: 5%  */
     padding: 16px 5%;
     gap: 24px;
   }
 
   .apresentacao__conteudo { width: auto; }
-
-  .apresentacao__links__navegacao {
-    width: 100%;
-    padding: 14px 0;
-  }
-
-  .apresentacao__imagem { width: 100%; max-width: 560px; }
+  .apresentacao__links__navegacao { width: 100%; padding: 14px 0; }
+  .apresentacao__imagem { width: 100%; max-width: 520px; } /* ainda um pouco menor que antes */
 }
