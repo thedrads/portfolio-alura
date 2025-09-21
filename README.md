@@ -2,7 +2,7 @@
 
 Site de portfólio em **HTML** e **CSS**, baseado no projeto da formação Alura e personalizado com minha identidade. Foco em **gestão financeira orientada por dados**, processos padronizados, automações e dashboards para previsibilidade e decisões claras.
 
-![Social preview do Portfólio](./social-preview.png)
+![Social preview do Portfólio](assets/social-preview.png)
 
 - **Site em produção:** https://portfolio-alura-three-eta.vercel.app/index.html  
 - **Perfil GitHub:** https://github.com/thedrads  
