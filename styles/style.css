@@ -18,7 +18,11 @@ body {
   color: var(--cor-secundaria);
 }
 
-.cabecalho { padding: 2% 0% 0% 15%; }
+/* Header mais compacto */
+.cabecalho {
+  /* antes: padding: 2% 0% 0% 15% */
+  padding: 12px 0 0 15%;
+}
 
 .cabecalho__menu { display: flex; gap: 80px; }
 
@@ -30,19 +34,22 @@ body {
   text-decoration: none;
 }
 
+/* Seção principal com menos respiro e gap menor */
 .apresentacao {
-  padding: 5% 15%;
+  /* antes: padding: 5% 15%; gap: 82px */
+  padding: 24px 12%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 82px;
+  gap: 48px;
 }
 
 .apresentacao__conteudo {
   width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  /* antes: gap: 40px */
+  gap: 24px;
 }
 
 .apresentacao__conteudo__titulo {
@@ -57,18 +64,21 @@ body {
   font-family: var(--fonte-secundaria);
 }
 
+/* Bloco de links mais enxuto */
 .apresentacao__links {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 32px;
+  /* antes: gap: 32px */
+  gap: 20px;
 }
 
 .apresentacao__links__subtitulo {
   font-family: var(--fonte-primaria);
   font-weight: 400;
-  font-size: 1.5rem;
+  /* antes: 1.5rem */
+  font-size: 1.25rem;
 }
 
 .apresentacao__links__navegacao {
@@ -82,7 +92,8 @@ body {
   border-radius: 8px;
   font-size: 1.5rem;
   font-weight: 600;
-  padding: 21.5px 0;
+  /* antes: 21.5px 0 */
+  padding: 14px 0;
   text-decoration: none;
   color: var(--cor-secundaria);
   font-family: var(--fonte-secundaria);
@@ -101,7 +112,7 @@ body {
   transform: translateY(-1px);
 }
 
-/* Correção do seletor da imagem principal */
+/* Imagem principal */
 .apresentacao__imagem {
   width: 50%;
   max-width: 480px;
@@ -120,15 +131,25 @@ body {
   font-weight: 400;
 }
 
+/* Responsivo mais compacto */
 @media (max-width: 1200px) {
-  .cabecalho { padding: 10%; }
+  /* antes: padding: 10% apenas em cima */
+  .cabecalho { padding: 18px 5% 0 5%; }
   .cabecalho__menu { justify-content: center; }
 
   .apresentacao {
     flex-direction: column-reverse;
-    padding: 5%;
+    /* antes: 5%  */
+    padding: 16px 5%;
+    gap: 24px;
   }
 
   .apresentacao__conteudo { width: auto; }
+
+  .apresentacao__links__navegacao {
+    width: 100%;
+    padding: 14px 0;
+  }
+
   .apresentacao__imagem { width: 100%; max-width: 560px; }
 }
