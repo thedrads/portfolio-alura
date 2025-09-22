@@ -60,14 +60,22 @@ body{
 }
 
 /* MAIS ESPAÇO ENTRE SEGUNDO PARÁGRAFO E REDES */
-.home .apresentacao__links{ margin-top: 20px; } /* era menor; agora um pouco maior */
+.home .apresentacao__links{ margin-top: 20px; }
 
-/* Título e textos */
+/* Título (geral) */
 .apresentacao__conteudo__titulo{
   font-size:2.25rem;
   line-height:1.2;
   font-family:var(--fonte-primaria);
   margin-top:2px;
+}
+
+/* Título da HOME menor para caber em uma linha no desktop */
+@media (min-width: 1024px){
+  .home .apresentacao__conteudo__titulo{
+    font-size:2.05rem;   /* sutil redução (de 2.25rem) para caber em 1 linha */
+    letter-spacing:0.2px;
+  }
 }
 
 .titulo-destaque{color:var(--cor-terciaria);}
@@ -86,7 +94,7 @@ body{
   display:flex;
   flex-direction:column;
   align-items:center;
-  gap:24px;
+  gap:20px;
 }
 
 .apresentacao__links__subtitulo{
@@ -115,40 +123,10 @@ body{
 .apresentacao__links__navegacao img{width:24px;height:24px;display:block;}
 .apresentacao__links__navegacao:hover{background-color:var(--cor-hover);transform:translateY(-1px);}
 
-/* Foto sutilmente menor */
+/* Foto */
 .apresentacao__imagem{
   width:46%;
   max-width:440px;
   height:auto;
   border-radius:12px;
-  object-fit:cover;
-}
-
-/* ==== Rodapé ==== */
-.rodape{
-  color:var(--cor-primaria);
-  background-color:var(--cor-terciaria);
-  padding:14px 24px;
-  text-align:center;
-  font-family:var(--fonte-secundaria);
-  font-size:1.35rem;
-  font-weight:400;
-}
-
-/* ==== Responsivo ==== */
-@media (max-width:1200px){
-  .cabecalho{padding:18px 5% 0 5%;}
-  .cabecalho__menu{justify-content:center;}
-
-  .apresentacao{
-    flex-direction:column-reverse;
-    padding:16px 5%;
-    gap:24px;
-  }
-
-  .apresentacao__conteudo{width:auto;}
-  .home .apresentacao__conteudo{min-height:unset;row-gap:16px;}
-  .apresentacao__links__navegacao{width:100%;padding:14px 0;}
-  .apresentacao__imagem{width:100%;max-width:520px;}
-}
-
+  objec
