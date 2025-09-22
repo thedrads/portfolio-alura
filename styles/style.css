@@ -73,7 +73,7 @@ body{
 /* Título da HOME menor para caber em uma linha no desktop */
 @media (min-width: 1024px){
   .home .apresentacao__conteudo__titulo{
-    font-size:1.80rem;   /* sutil redução (de 2.25rem) para caber em 1 linha */
+    font-size:1.85rem;   /* sutil redução (de 2.25rem) para caber em 1 linha */
     letter-spacing:0.2px;
   }
 }
@@ -130,5 +130,6 @@ body{
   height:auto;
   border-radius:12px;
   objec
+
 
 
