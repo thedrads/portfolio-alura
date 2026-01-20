@@ -15,11 +15,11 @@
 - [Objetivo do Projeto](#-objetivo-do-projeto)
 - [Preview](#-preview)
 - [Estrutura do Repositório](#-estrutura-do-repositório)
-- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Como Executar Localmente](#-como-executar-localmente)
 - [Contribuições e Feedback](#-contribuições-e-feedback)
+- [Declaração de Uso de IA](#-declaração-de-uso-de-ia)
 - [Autor](#-autor)
-- [Licença](#-licença)
 
 ---
 
@@ -67,7 +67,7 @@ portfolio-alura/
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 | Categoria | Tecnologia | Uso |
 |----------|-----------|-----|
