@@ -1,62 +1,108 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio | Fábio Andrade</title>
+
+  <title>Portfólio educacional (HTML & CSS) | Fábio Andrade</title>
+  <meta
+    name="description"
+    content="Projeto educacional de portfólio em HTML5 e CSS3 (Oracle Next Education – Alura). Fábio Andrade: gestor de negócios em transição para tecnologia, com foco em dados, automação e IA aplicada."
+  />
+  <meta name="author" content="Fábio Andrade" />
+  <meta name="robots" content="index,follow" />
+
+  <link rel="canonical" href="https://portfolio-alura-three-eta.vercel.app/index.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:title" content="Portfólio educacional (HTML & CSS) | Fábio Andrade" />
+  <meta
+    property="og:description"
+    content="Projeto educacional (ONE – Alura). Transição de carreira com foco em dados, automação e IA aplicada."
+  />
+  <meta property="og:url" content="https://portfolio-alura-three-eta.vercel.app/index.html" />
+  <meta property="og:image" content="https://portfolio-alura-three-eta.vercel.app/assets/social-preview.png" />
+  <meta property="og:image:alt" content="Prévia do projeto educacional de portfólio em HTML e CSS" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Portfólio educacional (HTML & CSS) | Fábio Andrade" />
+  <meta
+    name="twitter:description"
+    content="Projeto educacional (ONE – Alura). Transição de carreira com foco em dados, automação e IA aplicada."
+  />
+  <meta name="twitter:image" content="https://portfolio-alura-three-eta.vercel.app/assets/social-preview.png" />
+
   <link rel="stylesheet" href="./styles/style.css" />
 </head>
+
 <body class="home">
+  <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
   <header class="cabecalho">
-    <nav class="cabecalho__menu">
-      <a class="cabecalho__menu__link" href="index.html">Home</a>
+    <nav class="cabecalho__menu" aria-label="Navegação principal">
+      <a class="cabecalho__menu__link" href="index.html" aria-current="page">Home</a>
       <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
     </nav>
   </header>
 
-  <main class="apresentacao">
-    <section class="apresentacao__conteudo">
-      <h1 class="apresentacao__conteudo__titulo">
+  <main id="conteudo-principal" class="apresentacao">
+    <section class="apresentacao__conteudo" aria-labelledby="titulo-principal">
+      <p class="apresentacao__conteudo__texto">
+        <strong>Projeto educacional (ONE – Alura):</strong> este site foi criado como parte do meu aprendizado em Front-End.
+        Ele permanece publicado por exigência do curso e representa uma etapa inicial da minha evolução técnica.
+      </p>
+
+      <h1 id="titulo-principal" class="apresentacao__conteudo__titulo">
         Eficiência financeira <strong class="titulo-destaque">movida a dados</strong>
       </h1>
 
       <p class="apresentacao__conteudo__texto">
-        Sou Fábio Andrade, gestor financeiro que transforma operação em rotina previsível.
-        No consultório veterinário que coadministro, desenho processos padronizados,
-        implemento automações e estabeleço métricas que reduzem retrabalho e elevam a confiabilidade do caixa.
+        Sou <strong>Fábio Andrade</strong>. Atuei por mais de 20 anos em gestão de negócios e finanças,
+        com foco em <strong>padronização de processos</strong>, <strong>automação</strong> e <strong>indicadores</strong>.
+        No consultório veterinário que coadministro, desenho rotinas previsíveis, reduzo retrabalho e aumento a confiabilidade do caixa.
       </p>
 
       <p class="apresentacao__conteudo__texto">
-        Estou cursando MBA em Inteligência Artificial e Análise de Dados para acelerar decisões com evidências.
-        Meu foco é converter informação bruta em relatórios claros que orientam ação com simplicidade e precisão.
+        Estou em transição estruturada para tecnologia com foco em <strong>dados</strong>, <strong>cloud</strong> e <strong>IA aplicada</strong>.
+        Meu objetivo é transformar informação em relatórios claros e ações práticas — com simplicidade, consistência e melhoria contínua.
       </p>
 
-      <div class="apresentacao__links">
+      <div class="apresentacao__links" aria-label="Links para redes profissionais">
         <h2 class="apresentacao__links__subtitulo">Acesse minhas redes</h2>
 
-        <a class="apresentacao__links__navegacao" href="https://github.com/thedrads" target="_blank" rel="noopener noreferrer">
-          <img src="./assets/github.png" alt="GitHub" />
+        <a class="apresentacao__links__navegacao" href="https://github.com/thedrads" target="_blank" rel="noopener noreferrer"
+           aria-label="Abrir GitHub de Fábio Andrade em uma nova aba">
+          <img src="./assets/github.png" alt="" aria-hidden="true" />
           GitHub
         </a>
 
-        <a class="apresentacao__links__navegacao" href="https://www.linkedin.com/in/fabioandradegf/" target="_blank" rel="noopener noreferrer">
-          <img src="./assets/linkedin.png" alt="LinkedIn" />
+        <a class="apresentacao__links__navegacao" href="https://www.linkedin.com/in/fabioandradegf/" target="_blank" rel="noopener noreferrer"
+           aria-label="Abrir LinkedIn de Fábio Andrade em uma nova aba">
+          <img src="./assets/linkedin.png" alt="" aria-hidden="true" />
           LinkedIn
         </a>
 
-        <a class="apresentacao__links__navegacao" href="https://www.instagram.com/fabioandrade.gf" target="_blank" rel="noopener noreferrer">
-          <img src="./assets/instagram.png" alt="Instagram" />
+        <a class="apresentacao__links__navegacao" href="https://www.instagram.com/fabioandrade.gf" target="_blank" rel="noopener noreferrer"
+           aria-label="Abrir Instagram de Fábio Andrade em uma nova aba">
+          <img src="./assets/instagram.png" alt="" aria-hidden="true" />
           Instagram
         </a>
       </div>
+
+      <p class="apresentacao__conteudo__texto">
+        <strong>Feedbacks são bem-vindos:</strong> se você tiver sugestões de melhoria (acessibilidade, SEO, layout ou organização),
+        ficarei feliz em receber — estou construindo essa transição com prática e aprendizado constante.
+      </p>
     </section>
 
-    <img class="apresentacao__imagem" src="./assets/3x4.jpg" alt="Foto de Fábio Andrade" />
+    <figure class="apresentacao__media">
+      <img class="apresentacao__imagem" src="./assets/3x4.jpg" alt="Foto de Fábio Andrade" loading="lazy" decoding="async" />
+    </figure>
   </main>
 
   <footer class="rodape">
-    <p>Desenvolvido por Fábio Andrade.</p>
+    <p>Desenvolvido por Fábio Andrade • Projeto educacional (ONE – Alura).</p>
   </footer>
 </body>
 </html>
