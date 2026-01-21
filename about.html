@@ -1,53 +1,199 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sobre mim | Fábio Andrade</title>
-  <link rel="stylesheet" href="./styles/style.css" />
+    <!-- ═══════════════════════════════════════════════════════════════
+         META TAGS ESSENCIAIS
+         ═══════════════════════════════════════════════════════════════ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO: Title otimizado -->
+    <title>Sobre Fábio Andrade | Trajetória em Gestão e Data Science</title>
+    
+    <!-- SEO: Meta Description -->
+    <meta name="description" content="Conheça a trajetória de Fábio Andrade: 20 anos em gestão financeira, transição para Data Science, MBA em IA e projetos de automação com Python.">
+    
+    <!-- SEO: Keywords -->
+    <meta name="keywords" content="sobre Fábio Andrade, gestor financeiro, transição de carreira, data science, automação, MBA inteligência artificial">
+    
+    <!-- SEO: Author e Robots -->
+    <meta name="author" content="Fábio Andrade">
+    <meta name="robots" content="index, follow">
+    
+    <!-- SEO: Canonical -->
+    <link rel="canonical" href="https://thedrads.github.io/portfolio/about.html">
+    
+    <!-- ═══════════════════════════════════════════════════════════════
+         OPEN GRAPH
+         ═══════════════════════════════════════════════════════════════ -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Sobre Fábio Andrade | Gestão Financeira & Data Science">
+    <meta property="og:description" content="20 anos de gestão financeira + MBA em IA. Conheça minha trajetória e projetos.">
+    <meta property="og:image" content="https://thedrads.github.io/portfolio/assets/og-image.jpg">
+    <meta property="og:url" content="https://thedrads.github.io/portfolio/about.html">
+    <meta property="og:locale" content="pt_BR">
+    
+    <!-- ═══════════════════════════════════════════════════════════════
+         PERFORMANCE: Preconnect
+         ═══════════════════════════════════════════════════════════════ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- ═══════════════════════════════════════════════════════════════
+         FAVICON
+         ═══════════════════════════════════════════════════════════════ -->
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
+    
+    <!-- ═══════════════════════════════════════════════════════════════
+         STYLESHEET
+         ═══════════════════════════════════════════════════════════════ -->
+    <link rel="stylesheet" href="./styles/style.css">
+    
+    <!-- ═══════════════════════════════════════════════════════════════
+         SCHEMA.ORG: AboutPage
+         ═══════════════════════════════════════════════════════════════ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "Sobre Fábio Andrade",
+        "description": "Página sobre a trajetória profissional de Fábio Andrade",
+        "mainEntity": {
+            "@type": "Person",
+            "name": "Fábio Andrade",
+            "jobTitle": "Gestor Financeiro & Analista de Dados em formação",
+            "description": "Profissional com 20 anos em gestão financeira, em transição para Data Science",
+            "knowsAbout": [
+                "Gestão Financeira",
+                "Análise de Dados",
+                "Automação de Processos",
+                "Python",
+                "SQL",
+                "Power BI"
+            ]
+        }
+    }
+    </script>
 </head>
 
 <body class="about">
-  <header class="cabecalho">
-    <nav class="cabecalho__menu">
-      <a class="cabecalho__menu__link" href="index.html">Home</a>
-      <a class="cabecalho__menu__link" href="about.html" aria-current="page">Sobre mim</a>
-    </nav>
-  </header>
+    <!-- ═══════════════════════════════════════════════════════════════
+         ACESSIBILIDADE: Skip Link
+         ═══════════════════════════════════════════════════════════════ -->
+    <a href="#conteudo-principal" class="skip-link">
+        Pular para o conteúdo principal
+    </a>
 
-  <main class="apresentacao">
-    <section class="apresentacao__conteudo">
-      <h1 class="apresentacao__conteudo__titulo">
-        Sobre mim
-      </h1>
+    <!-- ═══════════════════════════════════════════════════════════════
+         HEADER
+         ═══════════════════════════════════════════════════════════════ -->
+    <header class="cabecalho" role="banner">
+        <nav class="cabecalho__menu" role="navigation" aria-label="Menu principal">
+            <a class="cabecalho__menu__link" href="index.html">
+                Home
+            </a>
+            <a class="cabecalho__menu__link" href="about.html" aria-current="page">
+                Sobre mim
+            </a>
+        </nav>
+    </header>
 
-      <p class="apresentacao__conteudo__texto">
-        Minha trajetória profissional é guiada por eficiência, transparência e disciplina financeira.
-        Atuo organizando fluxos, implantando automações e criando dashboards de acompanhamento
-        que facilitam a leitura do negócio e a tomada de decisão.
-      </p>
+    <!-- ═══════════════════════════════════════════════════════════════
+         MAIN: Conteúdo Principal
+         ═══════════════════════════════════════════════════════════════ -->
+    <main id="conteudo-principal" class="apresentacao" role="main">
+        
+        <article class="apresentacao__conteudo">
+            
+            <!-- Título da página -->
+            <h1 class="apresentacao__conteudo__titulo">
+                Minha trajetória
+            </h1>
+            
+            <!-- Bloco 1: Valores e atuação -->
+            <section class="apresentacao__secao">
+                <h2 class="visualmente-oculto">Filosofia de trabalho</h2>
+                <p class="apresentacao__conteudo__texto">
+                    Minha carreira é guiada por três pilares: 
+                    <strong>eficiência</strong>, <strong>transparência</strong> e 
+                    <strong>disciplina financeira</strong>. Ao longo de 
+                    <strong>20 anos em gestão</strong>, desenvolvi expertise em 
+                    organizar fluxos operacionais, implantar automações e criar 
+                    dashboards que simplificam a leitura do negócio e aceleram 
+                    a tomada de decisão.
+                </p>
+            </section>
+            
+            <!-- Bloco 2: Formação e transição -->
+            <section class="apresentacao__secao">
+                <h2 class="visualmente-oculto">Formação e evolução</h2>
+                <p class="apresentacao__conteudo__texto">
+                    No <strong>MBA em Inteligência Artificial e Análise de Dados</strong> 
+                    (SENAC-RJ), investigo como modelos preditivos e análises avançadas 
+                    podem antecipar cenários, otimizar orçamentos e destacar as métricas 
+                    que realmente importam. Complemento a formação com o programa 
+                    <strong>Oracle Next Education (ONE)</strong> em Data Science e 
+                    certificação <strong>AWS re/Start</strong> em Cloud Computing.
+                </p>
+            </section>
+            
+            <!-- Bloco 3: Propósito -->
+            <section class="apresentacao__secao">
+                <h2 class="visualmente-oculto">Propósito profissional</h2>
+                <p class="apresentacao__conteudo__texto">
+                    Meu objetivo é conectar <strong>tecnologia e negócio</strong> 
+                    com foco em previsibilidade, clareza e resultados mensuráveis. 
+                    Acredito em processos simples, métricas bem definidas e entregas 
+                    que geram impacto real — seja em um consultório veterinário ou 
+                    em qualquer operação que demande gestão financeira inteligente.
+                </p>
+            </section>
+            
+            <!-- Bloco 4: Stack e Competências -->
+            <section class="apresentacao__secao apresentacao__competencias" aria-labelledby="competencias-titulo">
+                <h2 id="competencias-titulo" class="apresentacao__competencias__titulo">
+                    Competências em desenvolvimento
+                </h2>
+                <ul class="apresentacao__competencias__lista" role="list">
+                    <li>Python (Pandas, NumPy, Scikit-learn)</li>
+                    <li>SQL e modelagem de dados</li>
+                    <li>Power BI e visualização de dados</li>
+                    <li>Machine Learning (classificação, regressão)</li>
+                    <li>AWS Cloud Foundations</li>
+                    <li>Git e GitHub (versionamento)</li>
+                    <li>Automação de processos (RPA, scripts)</li>
+                </ul>
+            </section>
+            
+        </article>
+        
+        <!-- Foto Profissional -->
+        <img class="apresentacao__imagem" 
+             src="./assets/3x4.jpg" 
+             alt="Fábio Andrade, gestor financeiro e analista de dados em formação" 
+             width="440" 
+             height="550"
+             loading="lazy">
+             
+    </main>
 
-      <p class="apresentacao__conteudo__texto">
-        Atualmente, no MBA em Inteligência Artificial e Análise de Dados,
-        investigo como análises e modelos podem antecipar cenários,
-        apoiar o orçamento e destacar o que realmente importa para a gestão.
-      </p>
+    <!-- ═══════════════════════════════════════════════════════════════
+         FOOTER
+         ═══════════════════════════════════════════════════════════════ -->
+    <footer class="rodape" role="contentinfo">
+        <p>
+            © <time datetime="2025">2025</time> Fábio Andrade. 
+            Desenvolvido como projeto acadêmico 
+            <a href="https://www.alura.com.br/escola-programacao" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="rodape__link">
+                Alura ONE
+            </a>.
+        </p>
+    </footer>
 
-      <p class="apresentacao__conteudo__texto">
-        Sigo aprendendo continuamente para conectar tecnologia e negócio
-        com foco em previsibilidade, clareza e resultados mensuráveis.
-      </p>
-    </section>
-
-    <img
-      class="apresentacao__imagem"
-      src="./assets/3x4.jpg"
-      alt="Foto de Fábio Andrade"
-    />
-  </main>
-
-  <footer class="rodape">
-    <p>Desenvolvido por Fábio Andrade.</p>
-  </footer>
 </body>
 </html>
