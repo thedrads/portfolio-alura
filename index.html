@@ -1,108 +1,219 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Portfólio educacional (HTML & CSS) | Fábio Andrade</title>
-  <meta
-    name="description"
-    content="Projeto educacional de portfólio em HTML5 e CSS3 (Oracle Next Education – Alura). Fábio Andrade: gestor de negócios em transição para tecnologia, com foco em dados, automação e IA aplicada."
-  />
-  <meta name="author" content="Fábio Andrade" />
-  <meta name="robots" content="index,follow" />
-
-  <link rel="canonical" href="https://portfolio-alura-three-eta.vercel.app/index.html" />
-
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="pt_BR" />
-  <meta property="og:title" content="Portfólio educacional (HTML & CSS) | Fábio Andrade" />
-  <meta
-    property="og:description"
-    content="Projeto educacional (ONE – Alura). Transição de carreira com foco em dados, automação e IA aplicada."
-  />
-  <meta property="og:url" content="https://portfolio-alura-three-eta.vercel.app/index.html" />
-  <meta property="og:image" content="https://portfolio-alura-three-eta.vercel.app/assets/social-preview.png" />
-  <meta property="og:image:alt" content="Prévia do projeto educacional de portfólio em HTML e CSS" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Portfólio educacional (HTML & CSS) | Fábio Andrade" />
-  <meta
-    name="twitter:description"
-    content="Projeto educacional (ONE – Alura). Transição de carreira com foco em dados, automação e IA aplicada."
-  />
-  <meta name="twitter:image" content="https://portfolio-alura-three-eta.vercel.app/assets/social-preview.png" />
-
-  <link rel="stylesheet" href="./styles/style.css" />
+    <!-- ═══════════════════════════════════════════════════════════════
+         META TAGS ESSENCIAIS
+         ═══════════════════════════════════════════════════════════════ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO: Title otimizado (50-60 caracteres) -->
+    <title>Fábio Andrade | Gestão Financeira & Data Analytics</title>
+    
+    <!-- SEO: Meta Description (150-160 caracteres) -->
+    <meta name="description" content="Gestor financeiro com 20 anos de experiência, especializado em automação de processos, dashboards e análise de dados. MBA em IA e Data Science.">
+    
+    <!-- SEO: Keywords (ainda útil para alguns crawlers) -->
+    <meta name="keywords" content="gestão financeira, análise de dados, data analytics, automação, Python, Power BI, MBA inteligência artificial">
+    
+    <!-- SEO: Author e Robots -->
+    <meta name="author" content="Fábio Andrade">
+    <meta name="robots" content="index, follow">
+    
+    <!-- SEO: Canonical URL (substitua pelo domínio real quando publicar) -->
+    <link rel="canonical" href="https://thedrads.github.io/portfolio/">
+    
+    <!-- ═══════════════════════════════════════════════════════════════
+         OPEN GRAPH (Facebook, LinkedIn, WhatsApp)
+         ═══════════════════════════════════════════════════════════════ -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Fábio Andrade | Gestão Financeira & Data Analytics">
+    <meta property="og:description" content="Transformo operações financeiras em processos previsíveis com automação, métricas e análise de dados.">
+    <meta property="og:image" content="https://thedrads.github.io/portfolio/assets/og-image.jpg">
+    <meta property="og:url" content="https://thedrads.github.io/portfolio/">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Portfólio Fábio Andrade">
+    
+    <!-- ═══════════════════════════════════════════════════════════════
+         PERFORMANCE: Preconnect para Google Fonts
+         ═══════════════════════════════════════════════════════════════ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- ═══════════════════════════════════════════════════════════════
+         FAVICON (crie um favicon.ico de 32x32 ou 16x16)
+         ═══════════════════════════════════════════════════════════════ -->
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
+    
+    <!-- ═══════════════════════════════════════════════════════════════
+         STYLESHEET
+         ═══════════════════════════════════════════════════════════════ -->
+    <link rel="stylesheet" href="./styles/style.css">
+    
+    <!-- ═══════════════════════════════════════════════════════════════
+         SCHEMA.ORG: Dados estruturados JSON-LD (Person)
+         ═══════════════════════════════════════════════════════════════ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Fábio Andrade",
+        "jobTitle": "Gestor Financeiro & Analista de Dados",
+        "description": "Profissional com 20 anos em gestão financeira, em transição para Data Science e IA",
+        "url": "https://thedrads.github.io/portfolio/",
+        "sameAs": [
+            "https://github.com/thedrads",
+            "https://www.linkedin.com/in/fabioandradegf/",
+            "https://www.instagram.com/fabioandrade.gf"
+        ],
+        "knowsAbout": [
+            "Gestão Financeira",
+            "Análise de Dados",
+            "Python",
+            "Power BI",
+            "Automação de Processos",
+            "Machine Learning"
+        ],
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "SENAC-RJ",
+            "department": "MBA em Inteligência Artificial e Análise de Dados"
+        }
+    }
+    </script>
 </head>
 
 <body class="home">
-  <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+    <!-- ═══════════════════════════════════════════════════════════════
+         ACESSIBILIDADE: Skip Link (navegação por teclado)
+         ═══════════════════════════════════════════════════════════════ -->
+    <a href="#conteudo-principal" class="skip-link">
+        Pular para o conteúdo principal
+    </a>
 
-  <header class="cabecalho">
-    <nav class="cabecalho__menu" aria-label="Navegação principal">
-      <a class="cabecalho__menu__link" href="index.html" aria-current="page">Home</a>
-      <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
-    </nav>
-  </header>
+    <!-- ═══════════════════════════════════════════════════════════════
+         HEADER: Navegação Principal
+         ═══════════════════════════════════════════════════════════════ -->
+    <header class="cabecalho" role="banner">
+        <nav class="cabecalho__menu" role="navigation" aria-label="Menu principal">
+            <a class="cabecalho__menu__link" href="index.html" aria-current="page">
+                Home
+            </a>
+            <a class="cabecalho__menu__link" href="about.html">
+                Sobre mim
+            </a>
+        </nav>
+    </header>
 
-  <main id="conteudo-principal" class="apresentacao">
-    <section class="apresentacao__conteudo" aria-labelledby="titulo-principal">
-      <p class="apresentacao__conteudo__texto">
-        <strong>Projeto educacional (ONE – Alura):</strong> este site foi criado como parte do meu aprendizado em Front-End.
-        Ele permanece publicado por exigência do curso e representa uma etapa inicial da minha evolução técnica.
-      </p>
+    <!-- ═══════════════════════════════════════════════════════════════
+         MAIN: Conteúdo Principal
+         ═══════════════════════════════════════════════════════════════ -->
+    <main id="conteudo-principal" class="apresentacao" role="main">
+        
+        <!-- SEÇÃO: Proposta de Valor -->
+        <article class="apresentacao__conteudo">
+            
+            <!-- Headline com proposta de valor clara -->
+            <h1 class="apresentacao__conteudo__titulo">
+                Eficiência financeira
+                <strong class="titulo-destaque">movida a dados</strong>
+            </h1>
+            
+            <!-- Storytelling: Quem sou + O que faço -->
+            <p class="apresentacao__conteudo__texto">
+                Sou <strong>Fábio Andrade</strong>, gestor financeiro com 
+                <strong>20 anos de experiência</strong> transformando operações 
+                em rotinas previsíveis. No consultório veterinário que coadministro, 
+                desenho processos padronizados, implemento automações e estabeleço 
+                métricas que reduzem retrabalho e elevam a confiabilidade do caixa.
+            </p>
+            
+            <!-- Diferencial: Formação em andamento -->
+            <p class="apresentacao__conteudo__texto">
+                Atualmente curso <strong>MBA em Inteligência Artificial e Análise 
+                de Dados</strong> para acelerar decisões com evidências. 
+                Meu foco: converter informação bruta em relatórios claros que 
+                orientam ação — com simplicidade e precisão.
+            </p>
+            
+            <!-- SEÇÃO: Links de Redes Sociais -->
+            <section class="apresentacao__links" aria-labelledby="redes-titulo">
+                <h2 id="redes-titulo" class="apresentacao__links__subtitulo">
+                    Conecte-se comigo
+                </h2>
+                
+                <!-- GitHub -->
+                <a class="apresentacao__links__navegacao" 
+                   href="https://github.com/thedrads" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   aria-label="Acesse meu perfil no GitHub">
+                    <img src="./assets/github.png" 
+                         alt="" 
+                         width="24" 
+                         height="24" 
+                         aria-hidden="true">
+                    GitHub
+                </a>
+                
+                <!-- LinkedIn -->
+                <a class="apresentacao__links__navegacao" 
+                   href="https://www.linkedin.com/in/fabioandradegf/" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   aria-label="Acesse meu perfil no LinkedIn">
+                    <img src="./assets/linkedin.png" 
+                         alt="" 
+                         width="24" 
+                         height="24" 
+                         aria-hidden="true">
+                    LinkedIn
+                </a>
+                
+                <!-- Instagram -->
+                <a class="apresentacao__links__navegacao" 
+                   href="https://www.instagram.com/fabioandrade.gf" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   aria-label="Acesse meu perfil no Instagram">
+                    <img src="./assets/instagram.png" 
+                         alt="" 
+                         width="24" 
+                         height="24" 
+                         aria-hidden="true">
+                    Instagram
+                </a>
+            </section>
+            
+        </article>
+        
+        <!-- Foto Profissional -->
+        <img class="apresentacao__imagem" 
+             src="./assets/3x4.jpg" 
+             alt="Fábio Andrade, gestor financeiro e analista de dados, vestindo camisa social" 
+             width="440" 
+             height="550"
+             loading="eager">
+             
+    </main>
 
-      <h1 id="titulo-principal" class="apresentacao__conteudo__titulo">
-        Eficiência financeira <strong class="titulo-destaque">movida a dados</strong>
-      </h1>
+    <!-- ═══════════════════════════════════════════════════════════════
+         FOOTER
+         ═══════════════════════════════════════════════════════════════ -->
+    <footer class="rodape" role="contentinfo">
+        <p>
+            © <time datetime="2025">2025</time> Fábio Andrade. 
+            Desenvolvido como projeto acadêmico 
+            <a href="https://www.alura.com.br/escola-programacao" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="rodape__link">
+                Alura ONE
+            </a>.
+        </p>
+    </footer>
 
-      <p class="apresentacao__conteudo__texto">
-        Sou <strong>Fábio Andrade</strong>. Atuei por mais de 20 anos em gestão de negócios e finanças,
-        com foco em <strong>padronização de processos</strong>, <strong>automação</strong> e <strong>indicadores</strong>.
-        No consultório veterinário que coadministro, desenho rotinas previsíveis, reduzo retrabalho e aumento a confiabilidade do caixa.
-      </p>
-
-      <p class="apresentacao__conteudo__texto">
-        Estou em transição estruturada para tecnologia com foco em <strong>dados</strong>, <strong>cloud</strong> e <strong>IA aplicada</strong>.
-        Meu objetivo é transformar informação em relatórios claros e ações práticas — com simplicidade, consistência e melhoria contínua.
-      </p>
-
-      <div class="apresentacao__links" aria-label="Links para redes profissionais">
-        <h2 class="apresentacao__links__subtitulo">Acesse minhas redes</h2>
-
-        <a class="apresentacao__links__navegacao" href="https://github.com/thedrads" target="_blank" rel="noopener noreferrer"
-           aria-label="Abrir GitHub de Fábio Andrade em uma nova aba">
-          <img src="./assets/github.png" alt="" aria-hidden="true" />
-          GitHub
-        </a>
-
-        <a class="apresentacao__links__navegacao" href="https://www.linkedin.com/in/fabioandradegf/" target="_blank" rel="noopener noreferrer"
-           aria-label="Abrir LinkedIn de Fábio Andrade em uma nova aba">
-          <img src="./assets/linkedin.png" alt="" aria-hidden="true" />
-          LinkedIn
-        </a>
-
-        <a class="apresentacao__links__navegacao" href="https://www.instagram.com/fabioandrade.gf" target="_blank" rel="noopener noreferrer"
-           aria-label="Abrir Instagram de Fábio Andrade em uma nova aba">
-          <img src="./assets/instagram.png" alt="" aria-hidden="true" />
-          Instagram
-        </a>
-      </div>
-
-      <p class="apresentacao__conteudo__texto">
-        <strong>Feedbacks são bem-vindos:</strong> se você tiver sugestões de melhoria (acessibilidade, SEO, layout ou organização),
-        ficarei feliz em receber — estou construindo essa transição com prática e aprendizado constante.
-      </p>
-    </section>
-
-    <figure class="apresentacao__media">
-      <img class="apresentacao__imagem" src="./assets/3x4.jpg" alt="Foto de Fábio Andrade" loading="lazy" decoding="async" />
-    </figure>
-  </main>
-
-  <footer class="rodape">
-    <p>Desenvolvido por Fábio Andrade • Projeto educacional (ONE – Alura).</p>
-  </footer>
 </body>
 </html>
